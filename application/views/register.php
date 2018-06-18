@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Register Stark Industries Coffee</title>
+	<title>Daftar Akun</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -31,17 +31,22 @@
 <!--===============================================================================================-->
 </head>
 <body style="background-color: #999999;">
-
 	<div class="limiter">
+
 		<div class="container-login100">
 			<div class="login100-more" style="background-image: url('<?php echo base_url('temp_register/'); ?>images/bg-02.jpg');"></div>
 
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
-				<form class="login100-form validate-form" method="post" action="<?php echo base_url('index.php/warkop/input_register') ?>">
+				<form class="login100-form validate-form" method="post" action="<?php echo base_url('index.php/Daftar/registrasi') ?>">
 					<span class="login100-form-title p-b-59">
-						Register - Tony Coffee
+						<h1>KOMUNITED</h1>
 					</span>
 
+					<div class="wrap-input100 validate-input" data-validate="Kolom Nama Harus diIsi!">
+						<span class="label-input100">Nama</span>
+						<input class="input100" type="text" name="nama" placeholder="Nama Anda...">
+						<span class="focus-input100"></span>
+					</div>
 
 	 				<div class="wrap-input100 validate-input" data-validate="Username is required">
 						<span class="label-input100">Username</span>
@@ -51,7 +56,7 @@
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 						<span class="label-input100">Email</span>
-						<input class="input100" type="text" name="email" placeholder="Email addess...">
+						<input class="input100" type="email" name="email" placeholder="Alamat Email Anda...">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -68,12 +73,17 @@
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Jabatan 0, 1, 2">
-						<span class="label-input100">Jabatan</span>
+					<div class="wrap-input100 validate-input" data-validate="Username is required">
+						<span class="label-input100">Nomor Hp</span>
+						<input class="input100" type="tel" name="nomorhp" placeholder="+628123456789">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" >
+						<span class="label-input100">Jenis Kelamin</span>
 						<select class="input100" name="selectbox">
-							<option value="0">super admin</option>
-							<option value="1">manager</option>
-							<option value="2">Employee</option>
+							<option value="Laki-Laki">Laki-Laki</option>
+							<option value="Perempuan">Perempuan</option>
 						</select>
 						<span class="focus-input100"></span>
 					</div>
@@ -83,9 +93,9 @@
 							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
 							<label class="label-checkbox100" for="ckb1">
 								<span class="txt1">
-									I agree to the
+									Saya Setuju dengan
 									<a href="#" class="txt2 hov1">
-										Terms of User
+										Kebijakan Pengguna Kami
 									</a>
 								</span>
 							</label>
@@ -102,7 +112,7 @@
 							</button>
 						</div>
 
-						<a href="<?php echo base_url('index.php/warkop/login'); ?>" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+						<a href="<?php echo base_url('index.php/login'); ?>" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
 							Sign in
 							<i class="fa fa-long-arrow-right m-l-5"></i>
 						</a>

@@ -5,13 +5,13 @@ class UserModel extends CI_Model {
 
 	public function registrasi($data)
   {
-    $result = $this->db->insert('userlist', $data); //nama tabel, dan data yang diambil
+    $result = $this->db->insert('user', $data); //nama tabel, dan data yang diambil
 		return $result;
   }
 
 	public function login($data)
-	{	
-		$result = $this->db->get_where('userlist', $data);
+	{
+		$result = $this->db->get_where('user', $data);
 		return $result;
 	}
 }
