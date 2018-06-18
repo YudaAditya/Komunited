@@ -7,30 +7,30 @@
 
 @font-face {
   font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  src: url('../fonts/poppins/Poppins-Medium.ttf');
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  src: url('../fonts/poppins/Poppins-Bold.ttf');
 }
 
 @font-face {
   font-family: Poppins-SemiBold;
-  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf');
 }
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
 * {
-	margin: 0px; 
-	padding: 0px; 
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 
@@ -178,7 +178,7 @@ iframe {
 }
 
 .container-login100 {
-  width: 100%;  
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -221,7 +221,7 @@ iframe {
   background: #e8519e;
   background: -webkit-linear-gradient(bottom, #e8519e, #c77ff2);
   background: -o-linear-gradient(bottom, #e8519e, #c77ff2);
-  background: -moz-linear-gradient(bottom, #e8519e, #c77ff2);
+  background: -moz-linear-gradient(bottom, #84fab0, #18d26e);
   background: linear-gradient(bottom, #e8519e, #c77ff2);
   opacity: 0.8;
 }
@@ -397,10 +397,10 @@ iframe {
   width: 100%;
   height: 300%;
   background: #e8519e;
-  background: -webkit-linear-gradient(top, #e8519e, #c77ff2, #e8519e, #c77ff2);
-  background: -o-linear-gradient(top, #e8519e, #c77ff2, #e8519e, #c77ff2);
-  background: -moz-linear-gradient(top, #e8519e, #c77ff2, #e8519e, #c77ff2);
-  background: linear-gradient(top, #e8519e, #c77ff2, #e8519e, #c77ff2);
+  background: -webkit-linear-gradient(top, #84fab0, #18d26e, #84fab0, #18d26e);
+  background: -o-linear-gradient(top, #84fab0, #18d26e, #84fab0, #18d26e);
+  background: -moz-linear-gradient(top, #84fab0, #18d26e, #84fab0, #18d26e);
+  background: linear-gradient(top, #84fab0, #18d26e, #84fab0, #18d26e);
   bottom: -100%;
   left: 0;
 

@@ -27,12 +27,12 @@
 
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('<?php echo base_url('temp_login/'); ?>images/img-02.jpg');">
-			<div class="wrap-login100 p-t-190 p-b-30">
-				<form class="login100-form validate-form" method="post" action="<?php echo base_url('index.php/warkop/input_login'); ?>">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" method="post" action="<?php echo base_url('index.php/login/input_login'); ?>">
 
 
 					<span class="login100-form-title p-t-20 p-b-45">
-						Tony Coffee
+						<h1>KOMUNITED</h1>
 					</span>
 
 					<div class="wrap-input100 validate-input m-b-10" data-validate = "Username is required">
@@ -53,20 +53,19 @@
 
 					<div class="container-login100-form-btn p-t-10">
 						<button class="login100-form-btn" type="submit">
-							Login
+							<h4>Login</h4>
 						</button>
 					</div>
 
 					<div class="text-center w-full p-t-25 p-b-230">
-						<a href="<?php echo base_url(); ?>" class="txt1">
-							Home
+						<a href="<?php echo base_url('index.php/Daftar'); ?>" class="login100" id="daftar">
+							<h5>Buat Akun</h5>
 						</a>
 					</div>
 
 					<div class="text-center w-full">
-						<a class="txt1" href="<?php echo base_url('index.php/warkop/register') ?>">
-							Create new account
-							<i class="fa fa-long-arrow-right"></i>
+						<a class="login100-form-btn" href="<?php echo base_url() ?>">
+
 						</a>
 					</div>
 				</form>
