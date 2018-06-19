@@ -26,7 +26,7 @@
   <link href="<?php echo base_url(); ?>tema/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="<?php echo base_url(); ?>tema/css/styleEvent.css" rel="stylesheet">
+  <link href="<?php echo base_url(); ?>tema/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: BizPage
@@ -52,21 +52,26 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="<?php echo base_url("index.php/Anggota") ?>">Beranda</a></li>
-          <li><a href="<?php echo base_url("index.php/Portofolio") ?>">Portofolio</a></li>
-          <li><a href="<?php echo base_url("index.php/Anggota/daftarKomunitas") ?>">Komunitas</a></li>
-          <li class="menu-active"><a href="<?php echo base_url("index.php/acara") ?>">Kalender</a></li>
-          <li><a href="#contact">Kontak</a></li>
-          <li><a href="<?php echo base_url("index.php/daftar/tambah_komunitas") ?>">Buat Komunitas</a></li>
-          <li><a href="#" >Username</a>
+          <li class="menu-active"><a href="#intro">Beranda</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#services">Layanan</a></li>
+          <li><a href="#portfolio">Pencapaian</a></li>
+            <li><a href="#team">Tim</a></li>
+          <li class="menu-has-children"><a href="">Komunitas</a>
             <ul>
-              <li><a href="<?php echo base_url("index.php/Anggota/pengaturan") ?>">Pengaturan Akun</a></li>
-              <li><a href="#"></a></li>
-              <li><a href="login/logout">Log Out</a></li>
+              <li><a href="#">Daftar Komunitas</a></li>
+              <li><a href="#">Kategori</a></li>
+              <li><a href="#">Acara</a></li>
+              <li><a href="#">Kalender</a></li>
             </ul>
           </li>
-
-
+          <li><a href="#contact">Kontak</a></li>
+          <li><a href="#">Username</a>
+            <ul>
+              <li><a href="#">Pengaturan Akun</a></li>
+              <li><a href="#">Log Out</a></li>
+            </ul>
+          </li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -84,11 +89,10 @@
             <div class="carousel-background"><img src="<?php echo base_url(); ?>tema/img/intro-carousel/1.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Event 1</h2>
-                <h5 style="color: white;">by "nama komunitas"</h5>
-                <p>detail event</p>
+                <h2>Nama Komunitas</h2>
+                <p>Deskripsi singkat komunitas</p>
                 <a href="#featured-services" class="btn-get-started scrollto">Bergabung Sekarang!</a>
-
+                
               </div>
             </div>
           </div>
@@ -156,6 +160,7 @@
       </div>
     </section><!-- #about -->
 
+
     <!--==========================
       Services Section
     ============================-->
@@ -163,33 +168,41 @@
       <div class="container">
 
         <header class="section-header wow fadeInUp">
-          <h3>Nama Event 1</h3>
-          <p>Deskripsi</p>
+          <h3>Deskripsi Komunitas</h3>
+          <p>Bacotan komunitas</p>
         </header>
 
         <div class="row">
 
-
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a href="">Tujuan kegiatan</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <div class="icon"><i class="ion-ios-star-outline"></i></div>
+            <h4 class="title"><a href="">Penghargaan komunitas 1</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-calendar-outline"></i></div>
-            <h4 class="title"><a href="">Tanggal</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <div class="icon"><i class="ion-ios-star-outline"></i></div>
+            <h4 class="title"><a href="">Penghargaan komunitas 2</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-star-outline"></i></div>
+            <h4 class="title"><a href="">Penghargaan komunitas 3</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-location-outline"></i></div>
-            <h4 class="title"><a href="">tempat</a></h4>
+            <div class="icon"><i class="ion-ios-star-outline"></i></div>
+            <h4 class="title"><a href="">Penghargaan Komunitas 4</a></h4>
             <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
           </div>
-
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-people-outline"></i></div>
-            <h4 class="title"><a href="">Sasaran Kegiatan</a></h4>
-            <p class="description">balaala</p>
+            <div class="icon"><i class="ion-ios-star-outline"></i></div>
+            <h4 class="title"><a href="">Penghargaan Komunitas 5</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-star-outline"></i></div>
+            <h4 class="title"><a href="">Penghargaan Komunitas 6</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
           </div>
 
         </div>
@@ -203,7 +216,7 @@
     <section id="call-to-action" class="wow fadeIn">
       <div class="container text-center">
         <h3>Bergabung</h3>
-        <p>kata2 ajakan lah dari si pembuat event, maaf kalo beda ya sama yang dipikirannya </p>
+        <p>kata2 ajakan lah dari si komunitas, maaf kalo beda ya sama yang dipikirannya </p>
         <a class="cta-btn" href="#">Klik untuk bergabung</a>
       </div>
     </section><!-- #call-to-action -->
@@ -225,11 +238,18 @@
 
         <header class="section-header">
           <h3 class="section-title">Foto Kegiatan</h3>
+          <p>1 foto utama buat ngewakilin kegiatan apa aja yang udah dijalanin</p>
         </header>
 
         <div class="row">
           <div class="col-lg-12">
             <ul id="portfolio-flters">
+              <!--maksudnya buat macam2 kegiatan, comment dulu aja lah ya
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            -->
             </ul>
           </div>
         </div>
@@ -240,11 +260,12 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="<?php echo base_url(); ?>tema/img/portfolio/app1.jpg" class="img-fluid" alt="">
-                <a href="<?php echo base_url(); ?>tema/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="Foto 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="Kegiatan 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> <!--link buat ke event yang di klik user-->
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Foto 1</a></h4>
+                <h4><a href="#">Kegiatan 1</a></h4>
                 <p>Deskripsi</p>
               </div>
             </div>
@@ -254,11 +275,12 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="<?php echo base_url(); ?>tema/img/portfolio/web3.jpg" class="img-fluid" alt="">
-                <a href="<?php echo base_url(); ?>tema/img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="foto 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Kegiatan 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Foto 2</a></h4>
+                <h4><a href="#">Kegiatan 2</a></h4>
                 <p>Deskripsi</p>
               </div>
             </div>
@@ -268,11 +290,12 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="<?php echo base_url(); ?>tema/img/portfolio/app2.jpg" class="img-fluid" alt="">
-                <a href="<?php echo base_url(); ?>tema/img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="foto 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Kegiatan 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Foto 3</a></h4>
+                <h4><a href="#">Kegiatan 3</a></h4>
                 <p>Deskripsi</p>
               </div>
             </div>
@@ -282,11 +305,12 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="<?php echo base_url(); ?>tema/img/portfolio/card2.jpg" class="img-fluid" alt="">
-                <a href="<?php echo base_url(); ?>tema/img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="foto 4" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Kegiatan 4" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Foto 4</a></h4>
+                <h4><a href="#">Kegiatan 4</a></h4>
                 <p>Deskripsi</p>
               </div>
             </div>
@@ -296,12 +320,13 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="<?php echo base_url(); ?>tema/img/portfolio/web2.jpg" class="img-fluid" alt="">
-                <a href="<?php echo base_url(); ?>tema/img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="foto 5" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Kegiatan 5" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">foto 5</a></h4>
-                <p>dekripsi</p>
+                <h4><a href="#">Kegiatan 5</a></h4>
+                <p>Deskripsi</p>
               </div>
             </div>
           </div>
@@ -310,12 +335,13 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="<?php echo base_url(); ?>tema/img/portfolio/app3.jpg" class="img-fluid" alt="">
-                <a href="<?php echo base_url(); ?>tema/img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="foto 6" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Kegiatan 6" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">foto 6</a></h4>
-                <p>deskripsi</p>
+                <h4><a href="#">Kegiatan 6</a></h4>
+                <p>Deskripsi</p>
               </div>
             </div>
           </div>
@@ -324,12 +350,13 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="<?php echo base_url(); ?>tema/img/portfolio/card1.jpg" class="img-fluid" alt="">
-                <a href="<?php echo base_url(); ?>tema/img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="foto 7" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Kegiatan 7" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">foto 7</a></h4>
-                <p>deskripsi</p>
+                <h4><a href="#">Kegiatan 7</a></h4>
+                <p>Deskripsi</p>
               </div>
             </div>
           </div>
@@ -338,12 +365,13 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="<?php echo base_url(); ?>tema/img/portfolio/card3.jpg" class="img-fluid" alt="">
-                <a href="<?php echo base_url(); ?>tema/img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="foto 8" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Kegiatan 8" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">foto 8</a></h4>
-                <p>deskripsi</p>
+                <h4><a href="#">Kegiatan 8</a></h4>
+                <p>Deskripsi</p>
               </div>
             </div>
           </div>
@@ -352,12 +380,13 @@
             <div class="portfolio-wrap">
               <figure>
                 <img src="<?php echo base_url(); ?>tema/img/portfolio/web1.jpg" class="img-fluid" alt="">
-                <a href="<?php echo base_url(); ?>tema/img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="foto 9" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Kegiatan 9" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">foto 9</a></h4>
-                <p>deskripsi</p>
+                <h4><a href="#">Kegiatan 9</a></h4>
+                <p>Deskripsi</p>
               </div>
             </div>
           </div>
@@ -370,6 +399,27 @@
     <!--==========================
       Clients Section
     ============================-->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Our Clients</h3>
+          <p>Kerjasama sama siapa si komunitas ini, gatau apa namanya</p>
+        </header>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="<?php echo base_url(); ?>tema/img/clients/client-1.png" alt="">
+          <img src="<?php echo base_url(); ?>tema/img/clients/client-2.png" alt="">
+          <img src="<?php echo base_url(); ?>tema/img/clients/client-3.png" alt="">
+          <img src="<?php echo base_url(); ?>tema/img/clients/client-4.png" alt="">
+          <img src="<?php echo base_url(); ?>tema/img/clients/client-5.png" alt="">
+          <img src="<?php echo base_url(); ?>tema/img/clients/client-6.png" alt="">
+          <img src="<?php echo base_url(); ?>tema/img/clients/client-7.png" alt="">
+          <img src="<?php echo base_url(); ?>tema/img/clients/client-8.png" alt="">
+        </div>
+
+      </div>
+    </section><!-- #clients -->
 
     <!--==========================
       Clients Section
@@ -449,8 +499,8 @@
     <section id="team">
       <div class="container">
         <div class="section-header wow fadeInUp">
-          <h3>Panitia</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <h3>Team</h3>
+          <p>Tim inti komunitas</p>
         </div>
 
         <div class="row">
@@ -539,8 +589,8 @@
       <div class="container">
 
         <div class="section-header">
-          <h3>Contact Us</h3>
-          <p>nomor telpon si komunitas eh atau si panitianya, alahhh gitulahhh</p>
+          <h3>Contact komunitas</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
         </div>
 
         <div class="row contact-info">

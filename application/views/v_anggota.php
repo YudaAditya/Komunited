@@ -52,22 +52,21 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Beranda</a></li>
-          <li class="menu-has-children"><a href="">Komunitas</a>
-            <ul>
-              <li><a href="#">Daftar Komunitas</a></li>
-              <li><a href="#">Kategori</a></li>
-              <li><a href="#">Acara</a></li>
-              <li><a href="#">Kalender</a></li>
-            </ul>
-          </li>
+          <li class="menu-active"><a href="<?php echo base_url("index.php/Anggota") ?>">Beranda</a></li>
+          <li><a href="<?php echo base_url("index.php/Portofolio") ?>">Portofolio</a></li>
+          <li class=""><a href="<?php echo base_url("index.php/Anggota/daftarKomunitas") ?>">Komunitas</a></li>
+          <li><a href="<?php echo base_url("index.php/acara") ?>">Kalender</a></li>
           <li><a href="#contact">Kontak</a></li>
-          <li><a href="#" >Akun</a>
+          <li><a href="<?php echo base_url("index.php/daftar/tambah_komunitas") ?>">Buat Komunitas</a></li>
+          <li><a href="#" >Username</a>
             <ul>
-              <li><a href="#">Pengaturan Akun</a></li>
-              <li><a href="#">Logout</a></li>
+              <li><a href="<?php echo base_url("index.php/Anggota/pengaturan") ?>">Pengaturan Akun</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="login/logout">Log Out</a></li>
             </ul>
           </li>
+
+
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -83,6 +82,19 @@
         <ol class="carousel-indicators"></ol>
 
         <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="<?php echo base_url(); ?>tema/img/intro-carousel/1.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Event 0</h2>
+                <p>Detail</p>
+                <a href="#featured-services" class="btn-get-started scrollto">Bergabung Sekarang!</a>
+                <a href="#featured-services" class="btn-get-started scrollto">Info Lebih Lanjut...</a>
+
+              </div>
+            </div>
+          </div>
 
           <div class="carousel-item">
             <div class="carousel-background"><img src="<?php echo base_url(); ?>tema/img/intro-carousel/2.jpg" alt=""></div>
@@ -132,6 +144,7 @@
             </div>
           </div>
 
+
         </div>
 
         <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
@@ -150,6 +163,239 @@
 
   <main id="main">
 
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Our Portfolio</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<?php echo base_url(); ?>tema/img/portfolio/app1.jpg" class="img-fluid" alt="">
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">App 1</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<?php echo base_url(); ?>tema/img/portfolio/web3.jpg" class="img-fluid" alt="">
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 3</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<?php echo base_url(); ?>tema/img/portfolio/app2.jpg" class="img-fluid" alt="">
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">App 2</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<?php echo base_url(); ?>tema/img/portfolio/card2.jpg" class="img-fluid" alt="">
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 2</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<?php echo base_url(); ?>tema/img/portfolio/web2.jpg" class="img-fluid" alt="">
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 2</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<?php echo base_url(); ?>tema/img/portfolio/app3.jpg" class="img-fluid" alt="">
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">App 3</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<?php echo base_url(); ?>tema/img/portfolio/card1.jpg" class="img-fluid" alt="">
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 1</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<?php echo base_url(); ?>tema/img/portfolio/card3.jpg" class="img-fluid" alt="">
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Card 3</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="<?php echo base_url(); ?>tema/img/portfolio/web1.jpg" class="img-fluid" alt="">
+                <a href="<?php echo base_url(); ?>tema/img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Web 1</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Contact Us</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>A108 Adam Street, NY 535022, USA</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
 
   <!--==========================
     Footer

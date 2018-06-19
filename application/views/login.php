@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login Tony Coffee</title>
+	<title>KOMUNITED - Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -28,7 +28,7 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('<?php echo base_url('temp_login/'); ?>images/img-02.jpg');">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form" method="post" action="<?php echo base_url('index.php/login/input_login'); ?>">
+				<form class="login100-form validate-form" method="post" action="<?php echo base_url('index.php/Login/input_login'); ?>">
 
 
 					<span class="login100-form-title p-t-20 p-b-45">
@@ -65,7 +65,7 @@
 
 					<div class="text-center w-full">
 						<a class="login100-form-btn" href="<?php echo base_url() ?>">
-
+							Home
 						</a>
 					</div>
 				</form>

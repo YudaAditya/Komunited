@@ -22,6 +22,7 @@ class Login extends CI_Controller {
 	{
 		$this->load->view('login');
 	}
+
 	public function input_login()
 	{
 		if ($this->input->post('username')) {
@@ -41,4 +42,12 @@ class Login extends CI_Controller {
 		}
 	}
 }
+
+public function logout()
+{
+	//$this->session->unset_userdata(array('user' => ''));
+	$this->session->sess_destroy();
+	redirect(base_url());
+}
+
 }
