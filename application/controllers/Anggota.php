@@ -11,4 +11,12 @@ class Anggota extends CI_Controller {
   public function event(){
     $this->load->view('v_event');
   }
+
+	public function komunitas(){
+    $this->load->view('v_komunitas');
+  }
+
+	public function daftarKomunitas(){
+    $this->load->view('v_daftarKomunitas');
+  }
 }

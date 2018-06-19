@@ -28,7 +28,7 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('<?php echo base_url('temp_login/'); ?>images/img-02.jpg');">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form" method="post" action="<?php echo base_url('index.php/warkop/input_login'); ?>">
+				<form class="login100-form validate-form" method="post" action="<?php echo base_url('index.php/Login/input_login'); ?>">
 
 
 					<span class="login100-form-title p-t-20 p-b-45">

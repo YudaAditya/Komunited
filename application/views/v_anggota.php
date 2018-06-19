@@ -69,7 +69,7 @@
           <li><a href="#" >Username</a>
             <ul>
               <li><a href="#">Pengaturan Akun</a></li>
-              <li><a href="#">Log Out</a></li>
+              <li><a href="login/logout">Log Out</a></li>
             </ul>
           </li>
         </ul>

@@ -5,6 +5,10 @@ class Dashboard_User extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('dashboard');
+		if ($this->session->has_userdata('user')) {
+			$this->load->view('v_anggota');
+		}else {
+			redirect('login');
+		}
 	}
 }
