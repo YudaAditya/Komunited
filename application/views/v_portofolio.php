@@ -28,6 +28,10 @@
   <!-- Main Stylesheet File -->
   <link href="<?php echo base_url(); ?>tema/css/stylePortofolio.css" rel="stylesheet">
 
+  <!-- <footer css-->
+  <link href="<?php echo base_url(); ?>tema/css/footer-distributed-with-contact-form.css " rel="stylesheet">
+
+
   <!-- =======================================================
     Theme Name: BizPage
     Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
@@ -56,7 +60,6 @@
           <li class="menu-active"><a href="<?php echo base_url("index.php/Portofolio") ?>">Portofolio</a></li>
           <li class=""><a href="<?php echo base_url("index.php/Anggota/daftarKomunitas") ?>">Komunitas</a></li>
           <li><a href="<?php echo base_url("index.php/acara") ?>">Kalender</a></li>
-          <li><a href="#contact">Kontak</a></li>
           <li><a href="<?php echo base_url("index.php/daftar/tambah_komunitas") ?>">Buat Komunitas</a></li>
           <li><a href="#" >Username</a>
             <ul>
@@ -122,74 +125,54 @@
   <!--==========================
     Footer
   ============================-->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+  <footer class="footer-distributed">
 
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>BizPage</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-          </div>
+    <div class="footer-left">
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Services</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
+      <h3>KOMUNITED</h3>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
+      <p class="footer-links">
+        <a href="#">Home</a>
+        ·
+        <a href="#">Blog</a>
+        ·
+        <a href="#">Pricing</a>
+        ·
+        <a href="#">About</a>
+        ·
+        <a href="#">Faq</a>
+        ·
+        <a href="#">Contact</a>
+      </p>
 
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
+      <p class="footer-company-name">Komunited &copy; 2018</p>
 
-          </div>
+      <div class="footer-icons">
 
-          <div class="col-lg-3 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit"  value="Subscribe">
-            </form>
-          </div>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
 
-        </div>
       </div>
+
     </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>BizPage</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
-        -->
-        Best <a href="https://bootstrapmade.com/">Bootstrap Templates</a> by BootstrapMade
-      </div>
+    <div class="footer-right">
+
+      <p>Contact Us</p>
+
+      <form action="#" method="post">
+
+        <input type="text" name="email" placeholder="Email" />
+        <textarea name="message" placeholder="Message"></textarea>
+        <button>Send</button>
+
+      </form>
+
     </div>
-  </footer><!-- #footer -->
+
+  </footer>><!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 

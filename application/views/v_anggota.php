@@ -28,6 +28,10 @@
   <!-- Main Stylesheet File -->
   <link href="<?php echo base_url(); ?>tema/css/style.css" rel="stylesheet">
 
+  <!-- <footer css-->
+  <link href="<?php echo base_url(); ?>tema/css/footer-distributed-with-contact-form.css " rel="stylesheet">
+
+
   <!-- =======================================================
     Theme Name: BizPage
     Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
@@ -56,7 +60,6 @@
           <li><a href="<?php echo base_url("index.php/Portofolio") ?>">Portofolio</a></li>
           <li class=""><a href="<?php echo base_url("index.php/Anggota/daftarKomunitas") ?>">Komunitas</a></li>
           <li><a href="<?php echo base_url("index.php/acara") ?>">Kalender</a></li>
-          <li><a href="#contact">Kontak</a></li>
           <li><a href="<?php echo base_url("index.php/daftar/tambah_komunitas") ?>">Buat Komunitas</a></li>
           <li><a href="#" >Username</a>
             <ul>
@@ -327,88 +330,58 @@
     </section><!-- #portfolio -->
 
 
-    <!--==========================
-      Contact Section
-    ============================-->
-    <section id="contact" class="section-bg wow fadeInUp">
-      <div class="container">
-
-        <div class="section-header">
-          <h3>Contact Us</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </div>
-
-        <div class="row contact-info">
-
-          <div class="col-md-4">
-            <div class="contact-address">
-              <i class="ion-ios-location-outline"></i>
-              <h3>Address</h3>
-              <address>A108 Adam Street, NY 535022, USA</address>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="contact-phone">
-              <i class="ion-ios-telephone-outline"></i>
-              <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="contact-email">
-              <i class="ion-ios-email-outline"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:info@example.com">info@example.com</a></p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
-        </div>
-
-      </div>
-    </section><!-- #contact -->
-
   </main>
 
   <!--==========================
     Footer
   ============================-->
-  <footer id="footer">
+  <footer class="footer-distributed">
 
+    <div class="footer-left">
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Komunited</strong>. All Rights Reserved
+      <h3>KOMUNITED</h3>
+
+      <p class="footer-links">
+        <a href="#">Home</a>
+        ·
+        <a href="#">Blog</a>
+        ·
+        <a href="#">Pricing</a>
+        ·
+        <a href="#">About</a>
+        ·
+        <a href="#">Faq</a>
+        ·
+        <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">Komunited &copy; 2018</p>
+
+      <div class="footer-icons">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+
       </div>
 
     </div>
+
+    <div class="footer-right">
+
+      <p>Contact Us</p>
+
+      <form action="#" method="post">
+
+        <input type="text" name="email" placeholder="Email" />
+        <textarea name="message" placeholder="Message"></textarea>
+        <button>Send</button>
+
+      </form>
+
+    </div>
+
   </footer><!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>

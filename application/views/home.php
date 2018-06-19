@@ -26,6 +26,11 @@
 
   <!-- Main Stylesheet File -->
   <link href="<?php echo base_url(); ?>tema/css/style.css" rel="stylesheet">
+  
+  <!-- <footer css-->
+  <link href="<?php echo base_url(); ?>tema/css/footer-distributed-with-contact-form.css " rel="stylesheet">
+
+
 
   <!-- =======================================================
     Theme Name: BizPage
