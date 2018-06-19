@@ -329,7 +329,6 @@
       </div>
     </section><!-- #portfolio -->
 
-
   </main>
 
   <!--==========================
@@ -342,21 +341,15 @@
       <h3>KOMUNITED</h3>
 
       <p class="footer-links">
-        <a href="#">Home</a>
+        <a href="<?php echo base_url("index.php/Anggota") ?>">Beranda</a>
         ·
-        <a href="#">Blog</a>
+        <a href="<?php echo base_url("index.php/Anggota/daftarKomunitas") ?>">Komunitas</a>
         ·
-        <a href="#">Pricing</a>
-        ·
-        <a href="#">About</a>
-        ·
-        <a href="#">Faq</a>
-        ·
-        <a href="#">Contact</a>
+        <a href="<?php echo base_url("index.php/acara") ?>">Kalender</a>
       </p>
 
       <p class="footer-company-name">Komunited &copy; 2018</p>
-
+<!--
       <div class="footer-icons">
 
         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -365,7 +358,7 @@
         <a href="#"><i class="fa fa-github"></i></a>
 
       </div>
-
+-->
     </div>
 
     <div class="footer-right">
