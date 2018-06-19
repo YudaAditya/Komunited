@@ -38,9 +38,6 @@
 
 <body>
 
-  <!--==========================
-    Header
-  ============================-->
   <header id="header">
     <div class="container-fluid">
 
@@ -52,26 +49,21 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Beranda</a></li>
-          <li><a href="#about">Tentang Kami</a></li>
-          <li><a href="#services">Layanan</a></li>
-          <li><a href="#portfolio">Pencapaian</a></li>
-            <li><a href="#team">Tim</a></li>
-          <li class="menu-has-children"><a href="">Komunitas</a>
-            <ul>
-              <li><a href="#">Daftar Komunitas</a></li>
-              <li><a href="#">Kategori</a></li>
-              <li><a href="#">Acara</a></li>
-              <li><a href="#">Kalender</a></li>
-            </ul>
-          </li>
+          <li><a href="<?php echo base_url("index.php/Anggota") ?>">Beranda</a></li>
+          <li><a href="<?php echo base_url("index.php/Portofolio") ?>">Portofolio</a></li>
+          <li class="menu-active"><a href="<?php echo base_url("index.php/Anggota/daftarKomunitas") ?>">Komunitas</a></li>
+          <li><a href="<?php echo base_url("index.php/acara") ?>">Kalender</a></li>
           <li><a href="#contact">Kontak</a></li>
+          <li><a href="<?php echo base_url("index.php/daftar/tambah_komunitas") ?>">Buat Komunitas</a></li>
           <li><a href="#" >Username</a>
             <ul>
-              <li><a href="#">Pengaturan Akun</a></li>
-              <li><a href="#">Log Out</a></li>
+              <li><a href="<?php echo base_url("index.php/Anggota/pengaturan") ?>">Pengaturan Akun</a></li>
+              <li><a href="#"></a></li>
+              <li><a href="login/logout">Log Out</a></li>
             </ul>
           </li>
+
+
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -315,7 +307,7 @@
     <!--==========================
       Contact Section
     ============================-->
-    
+
 
   </main>
 

@@ -14,4 +14,8 @@ class UserModel extends CI_Model {
 		$result = $this->db->get_where('user', $data);
 		return $result;
 	}
+	public function FunctionName($value='')
+	{
+		// code...
+	}
 }
