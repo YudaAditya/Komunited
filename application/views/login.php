@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login Tony Coffee</title>
+	<title>KOMUNITED - Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -65,7 +65,7 @@
 
 					<div class="text-center w-full">
 						<a class="login100-form-btn" href="<?php echo base_url() ?>">
-
+							Home
 						</a>
 					</div>
 				</form>
