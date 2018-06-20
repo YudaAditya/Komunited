@@ -57,7 +57,7 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Beranda</a></li>
-          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#about">Fitur</a></li>
           <li class="menu-has-children"><a href="">Komunitas</a>
             <ul>
               <li><a href="#">Daftar Komunitas</a></li>
