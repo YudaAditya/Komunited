@@ -174,9 +174,8 @@
               <div class="img">
                 <img src="<?php echo base_url(); ?>tema/img/about-mission.jpg" alt="" class="img-fluid">
               </div>
-              <h2 class="title"><a href="#">Our Mission</a></h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Portal informasi komunitas-komunitas yang ada di indonesia indonesia
               </p>
             </div>
           </div>
@@ -186,9 +185,8 @@
               <div class="img">
                 <img src="<?php echo base_url(); ?>tema/img/about-plan.jpg" alt="" class="img-fluid">
               </div>
-              <h2 class="title"><a href="#">Our Plan</a></h2>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Memberikan informasi seputar acara-acara yang di adakan oleh setiap komunitas yang ada di indonesia
               </p>
             </div>
           </div>
@@ -198,9 +196,8 @@
               <div class="img">
                 <img src="<?php echo base_url(); ?>tema/img/about-vision.jpg" alt="" class="img-fluid">
               </div>
-              <h2 class="title"><a href="#">Our Vision</a></h2>
               <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                Riwayat acara yang pernah diikuti oleh setiap user
               </p>
             </div>
           </div>
@@ -379,8 +376,8 @@
       <div class="container">
 
         <div class="section-header">
-          <h3>Contact Us</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <h3>Hubungi Kami</h3>
+          <p>Saran anda sangat membantu untuk membuat website ini menjadi lebih baik</p>
         </div>
 
         <div class="row contact-info">
@@ -388,16 +385,16 @@
           <div class="col-md-4">
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
-              <h3>Address</h3>
-              <address>A108 Adam Street, NY 535022, USA</address>
+              <h3>Alamat</h3>
+              <address>Laboratorium terpadu unsyiah</address>
             </div>
           </div>
 
           <div class="col-md-4">
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
-              <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+              <h3>Telepon</h3>
+              <p><a href="tel:+155895548855">+62888 8888 8888</a></p>
             </div>
           </div>
 
@@ -405,7 +402,7 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="mailto:info@example.com">info@example.com</a></p>
+              <p><a href="mailto:info@example.com">komunited@gmail.com</a></p>
             </div>
           </div>
 

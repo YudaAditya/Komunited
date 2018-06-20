@@ -109,8 +109,8 @@
     <div class="container" style="margin-top:50px">
 
       <!-- Page Heading -->
-      <h1 class="my-4">Page Heading
-        <small>Secondary Text</small>
+      <h1 class="my-4">Daftar Acara komunitas
+        <small></small>
       </h1>
 
       <div class="row">
