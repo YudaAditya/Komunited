@@ -210,7 +210,7 @@
 
     <!--==========================
       Portfolio Section
-    ============================-->
+    ============================
     <section id="portfolio"  class="section-bg" >
       <div class="container">
 
@@ -369,7 +369,7 @@
         </div>
 
       </div>
-    </section><!-- #portfolio -->
+    </section>--><!-- #portfolio -->
 
 
     <section id="contact" class="section-bg wow fadeInUp">
