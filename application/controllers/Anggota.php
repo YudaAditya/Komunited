@@ -29,10 +29,8 @@ class Anggota extends CI_Controller {
   }
 
 	public function daftarKomunitas(){
-		if ($this->session->has_userdata('user')) {
+
 			$this->load->view('v_daftarkomunitas');
-		}else {
-			redirect('login');
-		}
+
   }
 }

@@ -62,12 +62,32 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
+
+          <?php if($this->session->has_userdata('user')){ ?>
           <li><a href="<?php echo base_url("index.php/Anggota") ?>">Beranda</a></li>
+          <?php }else{ ?>
+          <li><a href="<?php echo base_url("index.php") ?>">Beranda</a></li>
+          <?php } ?>
+
+          <?php if($this->session->has_userdata('user')){ ?>
           <li><a href="<?php echo base_url("index.php/Portofolio") ?>">Portofolio</a></li>
+          <?php } ?>
+
           <li class=""><a href="<?php echo base_url("index.php/Anggota/daftarKomunitas") ?>">Komunitas</a></li>
+
           <li class="menu-active"><a href="<?php echo base_url("index.php/Acara") ?>">Acara</a></li>
+
+          <?php if($this->session->has_userdata('user')){ ?>
           <li><a href="<?php echo base_url("index.php/daftar/tambah_komunitas") ?>">Daftarkan Komunitas</a></li>
-          <li><a href="#" >Username</a>
+          <?php } ?>
+
+          <?php if($this->session->has_userdata('user')){ ?>
+          <li><a style="color: #FFFFFF"><?php  $data = $this->session->userdata("user");
+            $result= $this->db->query("select * from user where username=?" ,$data);
+              $result2= $result->row();
+              echo $result2->username
+              ?>
+              </a>
             <ul>
               <li><a href="<?php echo base_url("index.php/Anggota/pengaturan") ?>">Pengaturan Akun</a></li>
               <li><a href="#"></a></li>
@@ -75,6 +95,9 @@
             </ul>
           </li>
 
+        <?php }else{ ?>
+          <li> <a href="<?php echo base_url('index.php/Login'); ?>">Masuk</a> </li>
+      <?php } ?>
 
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -86,8 +109,8 @@
     <div class="container" style="margin-top:50px">
 
       <!-- Page Heading -->
-      <h1 class="my-4">Page Heading
-        <small>Secondary Text</small>
+      <h1 class="my-4">Daftar Acara komunitas
+        <small></small>
       </h1>
 
       <div class="row">

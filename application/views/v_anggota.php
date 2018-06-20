@@ -61,7 +61,13 @@
           <li class=""><a href="<?php echo base_url("index.php/Anggota/daftarKomunitas") ?>">Komunitas</a></li>
           <li><a href="<?php echo base_url("index.php/Acara") ?>">Acara</a></li>
           <li><a href="<?php echo base_url("index.php/daftar/tambah_komunitas") ?>">Daftarkan Komunitas</a></li>
-          <li><a href="#" >Username</a>
+
+          <li><a href="#" ><?php  $data = $this->session->userdata("user");
+            $result= $this->db->query("select * from user where username=?" ,$data);
+              $result2= $result->row();
+              echo $result2->username
+              ?>
+          </a>
             <ul>
               <li><a href="<?php echo base_url("index.php/Anggota/pengaturan") ?>">Pengaturan Akun</a></li>
               <li><a href="#"></a></li>
