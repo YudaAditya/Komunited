@@ -60,15 +60,20 @@
           <li class="menu-active"><a href="<?php echo base_url("index.php/Portofolio") ?>">Portofolio</a></li>
           <li class=""><a href="<?php echo base_url("index.php/Anggota/daftarKomunitas") ?>">Komunitas</a></li>
           <li><a href="<?php echo base_url("index.php/acara") ?>">Acara</a></li>
-          <li><a href="<?php echo base_url("index.php/daftar/tambah_komunitas") ?>">Buat Komunitas</a></li>
-          <li><a href="#" >Username</a>
+          <li><a href="<?php echo base_url("index.php/daftar/tambah_komunitas") ?>">Daftarkan Komunitas</a></li>
+
+          <li><a href="#" ><?php  $data = $this->session->userdata("user");
+            $result= $this->db->query("select * from user where username=?" ,$data);
+              $result2= $result->row();
+              echo $result2->username
+              ?>
+          </a>
             <ul>
               <li><a href="<?php echo base_url("index.php/Anggota/pengaturan") ?>">Pengaturan Akun</a></li>
               <li><a href="#"></a></li>
-              <li><a href="<?php echo base_url("index.php/login/logout") ?>">Log Out</a></li>
+              <li><a href="login/logout">Log Out</a></li>
             </ul>
           </li>
-
 
         </ul>
       </nav><!-- #nav-menu-container -->

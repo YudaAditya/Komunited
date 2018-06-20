@@ -58,14 +58,8 @@
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Beranda</a></li>
           <li><a href="#about">Fitur</a></li>
-          <li class="menu-has-children"><a href="">Komunitas</a>
-            <ul>
-              <li><a href="#">Daftar Komunitas</a></li>
-              <li><a href="#">Kategori</a></li>
-              <li><a href="#">Acara</a></li>
-              <li><a href="#">Kalender</a></li>
-            </ul>
-          </li>
+          <li class=""><a href="<?php echo base_url("index.php/Anggota/daftarKomunitas") ?>">Komunitas</a></li>
+          <li><a href="<?php echo base_url("index.php/Acara") ?>">Acara</a></li>
           <li><a href="#contact">Kontak</a></li>
           <li> <a href="<?php echo base_url('index.php/Login'); ?>">Masuk</a> </li>
         </ul>
