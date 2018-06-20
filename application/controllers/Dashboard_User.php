@@ -11,4 +11,12 @@ class Dashboard_User extends CI_Controller {
 			redirect('login');
 		}
 	}
+	public function dasboard_komunitas($value='')
+	{
+		if ($this->session->has_userdata('user')) {
+			$this->load->view('dasboard');
+		}else {
+			redirect('login');
+		}
+	}
 }

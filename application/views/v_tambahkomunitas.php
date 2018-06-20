@@ -37,14 +37,14 @@
 			<div class="login100-more" style="background-image: url('<?php echo base_url('temp_register/'); ?>images/bg-02.jpg');"></div>
 
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
-				<form class="login100-form validate-form" method="post" action="<?php echo base_url('index.php/Daftar/registrasi') ?>">
+				<form class="login100-form validate-form" method="post" action="<?php echo base_url('index.php/Daftar/daftar_komunitas') ?>">
 					<span class="login100-form-title p-b-59">
 						<h1>KOMUNITED - Komunitas</h1>
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate="Kolom Nama Harus diIsi!">
 						<span class="label-input100">Nama Komunitas</span>
-						<input class="input100" type="text" name="nama" placeholder="Nama Komunitas...">
+						<input class="input100" type="text" name="namakomunitas" placeholder="Nama Komunitas...">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -55,20 +55,44 @@
 					</div>
 
 
-					<div class="wrap-input100 validate-input" data-validate="Username is required">
+					<div class="wrap-input100 validate-input" data-validate="Number is required">
 						<span class="label-input100">Nomor Hp</span>
 						<input class="input100" type="tel" name="kontak" placeholder="+628123456789">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" >
-						<span class="label-input100">Jenis Kelamin</span>
+						<span class="label-input100">Kategori</span>
 						<select class="input100" name="selectbox">
-							<option value="Laki-Laki">Laki-Laki</option>
-							<option value="Perempuan">Perempuan</option>
+							<option value="01">Bisnis & UKM</option>
+							<option value="02">Fashion</option>
+							<option value="03">Gaya Hidup</option>
+							<option value="04">Keagamaan</option>
+							<option value="05">Kepemudaan</option>
+							<option value="06">Kesehatan</option>
+							<option value="07">Lingkungan Hidup</option>
+							<option value="08">Olahraga</option>
+							<option value="09">Pendidikan</option>
+							<option value="10">Perempuan</option>
+							<option value="11">Politik</option>
+							<option value="12">Profesi & Alumni</option>
+							<option value="13">Sains & Teknologi</option>
+							<option value="14">Sejarah</option>
+							<option value="15">Selebriti & Hiburan</option>
+							<option value="16">Seni & Budaya</option>
+							<option value="17">Sosial</option>
+							<option value="18">Wisata & Kuliner</option>
+
 						</select>
 						<span class="focus-input100"></span>
 					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Number is required">
+						<span class="label-input100">Biodata Komunitas</span>
+						<textarea name="biodata" rows="5" cols="80" placeholder="Deskripsikan Komunitas Anda"></textarea>
+						<span class="focus-input100"></span>
+					</div>
+
 
 					<div class="flex-m w-full p-b-33">
 						<div class="contact100-form-checkbox">

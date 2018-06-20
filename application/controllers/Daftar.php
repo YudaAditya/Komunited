@@ -50,47 +50,42 @@ class Daftar extends CI_Controller {
 			}
   }
 }
-	public function tambah_komunitas($value='')
+	public function tambah_komunitas()
 	{
 		$this->load->view('v_tambahkomunitas');
 	}
+
 	public function daftar_komunitas()
 	{
-		if ($this->input->post('username')) {
-			$username = $this->input->post('username');
-			$nama = $this->input->post('nama');
+		if ($this->input->post('namakomunitas')) {
+			$namakomunitas= $this->input->post('namakomunitas');
 			$email = $this->input->post('email');
-			$pass= hash('sha256', $this->input->post('password'));
-			$no_hp= $this->input->post('nomorhp');
-			$jenis_kelamin= $this->input->post('selectbox');
+			$kontak= $this->input->post('kontak');
+			$kategori= $this->input->post('selectbox');
+			$biodata= $this->input->post('biodata');
 
-			if ($this->input->post('password') != $this->input->post('password2')) {
-				echo "password tidak sama";
-				return;
-			}
-			$emails= $this->db->query("select * from user where email='".$email."'");
+			$emails= $this->db->query("select * from komunitas where email='".$email."'");
 			if(($emails->num_rows())>0){
 				echo "duplicate email";
 				return;
 			}
-			$usernamedup= $this->db->query("select * from user where username='".$username."'");
+			$usernamedup= $this->db->query("select * from komunitas where nama_komunitas='".$namakomunitas."'");
 			if (($usernamedup->num_rows())>0) {
 				echo "duplicate Username";
 				return;
 			}
 
 			$data = array(
-				'username'=> $username,
-				'nama'=> $nama,
+				'nama_komunitas'=> $namakomunitas,
 				'email'=> $email,
-				'password'=> $pass,
-				'no_hp'=> $no_hp,
-				'jenis_kelamin'=> $jenis_kelamin
+				'kontak'=> $kontak,
+				'id_kategori'=> $kategori,
+				'bio'=> $biodata
 			);
 			$this->load->model('Usermodel');
-			$result = $this->Usermodel->registrasi($data);
+			$result = $this->Usermodel->add_komunitas($data);
 			if ($result) {
-				redirect('login');
+				redirect('login/dasboard_komunitas');
 			} else {
 				echo "Gagal mendaftar";
 			}
