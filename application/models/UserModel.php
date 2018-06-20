@@ -14,6 +14,7 @@ class UserModel extends CI_Model {
 		$result = $this->db->get_where('user', $data);
 		return $result;
 	}
+	/*
 	public function add_komunitas($data)
 	{
 		$result = $this->->db->insert('komunitas', $data['nama_komunitas']);
@@ -24,4 +25,5 @@ class UserModel extends CI_Model {
 		$result = $this->->db->insert('milik', $data['nama_komunitas']);
 		return $result;
 	}
+	*/
 }

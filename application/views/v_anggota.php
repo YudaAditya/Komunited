@@ -59,8 +59,8 @@
           <li class="menu-active"><a href="<?php echo base_url("index.php/Anggota") ?>">Beranda</a></li>
           <li><a href="<?php echo base_url("index.php/Portofolio") ?>">Portofolio</a></li>
           <li class=""><a href="<?php echo base_url("index.php/Anggota/daftarKomunitas") ?>">Komunitas</a></li>
-          <li><a href="<?php echo base_url("index.php/acara") ?>">Kalender</a></li>
-          <li><a href="<?php echo base_url("index.php/daftar/tambah_komunitas") ?>">Buat Komunitas</a></li>
+          <li><a href="<?php echo base_url("index.php/Acara") ?>">Acara</a></li>
+          <li><a href="<?php echo base_url("index.php/daftar/tambah_komunitas") ?>">Daftarkan Komunitas</a></li>
           <li><a href="#" >Username</a>
             <ul>
               <li><a href="<?php echo base_url("index.php/Anggota/pengaturan") ?>">Pengaturan Akun</a></li>
