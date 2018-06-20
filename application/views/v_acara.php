@@ -90,7 +90,7 @@
               </a>
             <ul>
               <li><a href="<?php echo base_url("index.php/Anggota/pengaturan") ?>">Pengaturan Akun</a></li>
-              <li><a href="#"></a></li>
+              <li><a href="#">Pengaturan Komunitas</a></li>
               <li><a href="login/logout">Log Out</a></li>
             </ul>
           </li>
@@ -119,9 +119,9 @@
             <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project One</a>
+                <a href="#">Event One</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              <p class="card-text">Deskripsi</p>
             </div>
           </div>
         </div>
@@ -130,9 +130,9 @@
             <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Two</a>
+                <a href="#">Event Two</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
+              <p class="card-text">Deskripsi</p>
             </div>
           </div>
         </div>
@@ -141,9 +141,9 @@
             <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Three</a>
+                <a href="#">Event Three</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              <p class="card-text">Deskripsi</p>
             </div>
           </div>
         </div>
@@ -152,9 +152,9 @@
             <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Four</a>
+                <a href="#">Event Four</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
+              <p class="card-text">Deskripsi</p>
             </div>
           </div>
         </div>
@@ -163,9 +163,9 @@
             <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Five</a>
+                <a href="#">Event Five</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              <p class="card-text">Deskripsi</p>
             </div>
           </div>
         </div>
@@ -174,9 +174,9 @@
             <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Six</a>
+                <a href="#">Event Six</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
+              <p class="card-text">Deskripsi</p>
             </div>
           </div>
         </div>
