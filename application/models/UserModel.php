@@ -14,8 +14,14 @@ class UserModel extends CI_Model {
 		$result = $this->db->get_where('user', $data);
 		return $result;
 	}
-	public function FunctionName($value='')
+	public function add_komunitas($data)
 	{
-		// code...
+		$result = $this->->db->insert('komunitas', $data['nama_komunitas']);
+		$result = $this->->db->insert('komunitas', $data['email']);
+		$result = $this->->db->insert('komunitas', $data['kontak']);
+		$result = $this->->db->insert('komunitas', $data['bio']);
+		$result = $this->->db->insert('milik', $data['id_kategori']);
+		$result = $this->->db->insert('milik', $data['nama_komunitas']);
+		return $result;
 	}
 }
