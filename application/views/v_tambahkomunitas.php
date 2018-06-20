@@ -54,6 +54,11 @@
 						<span class="focus-input100"></span>
 					</div>
 
+					<div class="wrap-input100 validate-input" data-validate="Kolom Alamat Harus diIsi!">
+						<span class="label-input100">Alamat</span>
+						<input class="input100" type="text" name="alamat" placeholder="Alamat Komunitas...">
+						<span class="focus-input100"></span>
+					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Number is required">
 						<span class="label-input100">Nomor Hp</span>
@@ -87,7 +92,7 @@
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Number is required">
+					<div class="wrap-input100 validate-input" data-validate="">
 						<span class="label-input100">Biodata Komunitas</span>
 						<textarea name="biodata" rows="5" cols="80" placeholder="Deskripsikan Komunitas Anda"></textarea>
 						<span class="focus-input100"></span>

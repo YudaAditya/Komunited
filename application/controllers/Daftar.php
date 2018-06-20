@@ -63,15 +63,16 @@ class Daftar extends CI_Controller {
 			$kontak= $this->input->post('kontak');
 			$kategori= $this->input->post('selectbox');
 			$biodata= $this->input->post('biodata');
+			$alamat= $this->input->post('alamat');
 
-			$emails= $this->db->query("select * from komunitas where email='".$email."'");
+			/*$emails= $this->db->query("select * from komunitas where email='".$email."'");
 			if(($emails->num_rows())>0){
 				echo "duplicate email";
 				return;
-			}
+			}*/
 			$usernamedup= $this->db->query("select * from komunitas where nama_komunitas='".$namakomunitas."'");
 			if (($usernamedup->num_rows())>0) {
-				echo "duplicate Username";
+				echo "Komunitas telah terdaftar";
 				return;
 			}
 
@@ -79,13 +80,15 @@ class Daftar extends CI_Controller {
 				'nama_komunitas'=> $namakomunitas,
 				'email'=> $email,
 				'kontak'=> $kontak,
+				'alamat'=> $alamat,
 				'id_kategori'=> $kategori,
 				'bio'=> $biodata
 			);
+
 			$this->load->model('Usermodel');
 			$result = $this->Usermodel->add_komunitas($data);
 			if ($result) {
-				redirect('login/dasboard_komunitas');
+				redirect('dashboard_user/dashboard_komunitas');
 			} else {
 				echo "Gagal mendaftar";
 			}
