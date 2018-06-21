@@ -137,46 +137,23 @@
       <div class="container">
 
         <header class="section-header">
-          <h3 class="section-title">Daftar Komunitas</h3>
+          <h3 class="section-title">Pengaturan Komunitas</h3>
         </header>
 
 
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-01">Bisnis & UKM</li>
-              <li data-filter=".filter-02">Fashion</li>
-              <li data-filter=".filter-03">Gaya Hidup</li>
-              <li data-filter=".filter-04">Keagamaan</li>
-              <li data-filter=".filter-05">Kepemudaan</li>
-              <li data-filter=".filter-06">Kesehatan</li>
-              <li data-filter=".filter-07">Lingkungan Hidup</li>
-              <li data-filter=".filter-08">Olahraga</li>
-              <li data-filter=".filter-09">Pendidikan</li>
-              <li data-filter=".filter-10">Perempuan</li>
-              <li data-filter=".filter-11">Politik</li>
-              <li data-filter=".filter-12">Profesi & Alumni</li>
-              <li data-filter=".filter-13">Sains & Teknologi</li>
-              <li data-filter=".filter-14">Sejarah</li>
-              <li data-filter=".filter-15">Selebriti & Hiburan</li>
-              <li data-filter=".filter-16">Seni & Budaya</li>
-              <li data-filter=".filter-17">Sosial</li>
-              <li data-filter=".filter-18">Wisata & Kuliner</li>
-            </ul>
-          </div>
-        </div>
+
 
         <div class="row portfolio-container">
           <?php
-          $result = $this->db->query("select * from komunitas");
+          $data = $this->session->userdata("user");
+          $result = $this->db->query("select * from komunitas where admin=?", $data);
           $result2 = $result->result();
           $bool=true;
 
           foreach($result2 as $result3){
 
             if($bool){
-    echo "<div class=\"col-lg-4 col-md-6 portfolio-item filter-$result3->id_kategori wow fadeInUp\">
+    echo "<div class=\"col-lg-4 col-md-6 portfolio-item wow fadeInUp\">
             <div class=\"portfolio-wrap\">
               <figure>
                 <img src=\"<?php echo base_url(); ?>tema/img/portfolio/app1.jpg\" class=\"img-fluid\" alt=\"\">
@@ -189,7 +166,7 @@
           </div>";
           $bool=false;
         } else {
-          echo "<div class=\"col-lg-4 col-md-6 portfolio-item filter-$result3->id_kategori wow fadeInUp\">
+          echo "<div class=\"col-lg-4 col-md-6 portfolio-item wow fadeInUp\">
                   <div class=\"portfolio-wrap\">
                     <figure>
                       <img src=\"<?php echo base_url(); ?>tema/img/portfolio/app1.jpg\" class=\"img-fluid\" alt=\"\">

@@ -90,8 +90,9 @@
               </a>
             <ul>
               <li><a href="<?php echo base_url("index.php/Anggota/pengaturan") ?>">Pengaturan Akun</a></li>
+              <li><a href="<?php echo base_url("index.php/komunitas_controller") ?>">Pengaturan Komunitas</a></li>
               <li><a href="#"></a></li>
-              <li><a href="login/logout">Log Out</a></li>
+              <li><a href="<?php echo base_url("index.php/login/logout") ?>">Log Out</a></li>
             </ul>
           </li>
 

@@ -5,6 +5,6 @@ class komunitas_controller extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('komunitas.php');
+		$this->load->view('v_pengaturan_komunitas.php');
 	}
 }

@@ -64,7 +64,10 @@ class Daftar extends CI_Controller {
 			$kategori= $this->input->post('selectbox');
 			$biodata= $this->input->post('biodata');
 			$alamat= $this->input->post('alamat');
-
+			$userlog= $this->session->userdata('user');
+			$hasil = $this->db->query("select * from user where username=?",$userlog);
+			$hasil2 = $hasil->row();
+			$hasil3= $hasil2->username;
 			/*$emails= $this->db->query("select * from komunitas where email='".$email."'");
 			if(($emails->num_rows())>0){
 				echo "duplicate email";
@@ -82,7 +85,8 @@ class Daftar extends CI_Controller {
 				'kontak'=> $kontak,
 				'alamat'=> $alamat,
 				'id_kategori'=> $kategori,
-				'bio'=> $biodata
+				'bio'=> $biodata,
+				'admin'=> $hasil3
 			);
 
 			$this->load->model('Usermodel');

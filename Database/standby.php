@@ -63,7 +63,7 @@
   <!--==========================
     Header
   ============================-->
-  <header id="header">
+  <header id="header" style="background:rgba(0,0,0, 0.9);">
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
@@ -74,22 +74,44 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Beranda</a></li>
-          <li class="menu-has-children"><a href="">Komunitas</a>
+
+          <?php if($this->session->has_userdata('user')){ ?>
+          <li><a href="<?php echo base_url("index.php/Anggota") ?>">Beranda</a></li>
+          <?php }else{ ?>
+          <li><a href="<?php echo base_url("index.php") ?>">Beranda</a></li>
+          <?php } ?>
+
+          <?php if($this->session->has_userdata('user')){ ?>
+          <li><a href="<?php echo base_url("index.php/Portofolio") ?>">Portofolio</a></li>
+          <?php } ?>
+
+          <li class=""><a href="<?php echo base_url("index.php/Anggota/daftarKomunitas") ?>">Komunitas</a></li>
+
+          <li class="menu-active"><a href="<?php echo base_url("index.php/Acara") ?>">Acara</a></li>
+
+          <?php if($this->session->has_userdata('user')){ ?>
+          <li><a href="<?php echo base_url("index.php/daftar/tambah_komunitas") ?>">Daftarkan Komunitas</a></li>
+          <?php } ?>
+
+          <?php if($this->session->has_userdata('user')){ ?>
+          <li><a style="color: #FFFFFF"><?php  $data = $this->session->userdata("user");
+            $result= $this->db->query("select * from user where username=?" ,$data);
+              $result2= $result->row();
+              echo $result2->username
+              ?>
+              </a>
             <ul>
-              <li><a href="<?php echo base_url('index.php/komunitas_controller'); ?>">Daftar Komunitas</a></li>
-              <li><a href="#">Kategori</a></li>
-              <li><a href="#">Acara</a></li>
-              <li><a href="#">Kalender</a></li>
+              <li><a href="<?php echo base_url("index.php/Anggota/pengaturan") ?>">Pengaturan Akun</a></li>
+
+              <li><a href="<?php echo base_url("index.php/komunitas_controller") ?>">Pengaturan Komunitas</a></li>
+              <li><a href="<?php echo base_url("index.php/login/logout") ?>">Log Out</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Kontak</a></li>
-          <li><a href="#" >Akun</a>
-            <ul>
-              <li><a href="#">Pengaturan Akun</a></li>
-              <li><a href="<?php echo base_url('index.php/logout'); ?>">Logout</a></li>
-            </ul>
-          </li>
+
+        <?php }else{ ?>
+          <li> <a href="<?php echo base_url('index.php/Login'); ?>">Masuk</a> </li>
+      <?php } ?>
+
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -102,7 +124,8 @@
   <br><br><br><br><br>
 
   <?php
-  $result = $this->db->query("select * from komunitas");
+  $data = $this->session->userdata("user");
+  $result = $this->db->query("select * from komunitas where admin=?", $data);
   $result2 = $result->result();
 
   $bool=true;
