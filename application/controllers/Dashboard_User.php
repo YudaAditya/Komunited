@@ -11,12 +11,4 @@ class Dashboard_User extends CI_Controller {
 			redirect('login');
 		}
 	}
-	public function dashboard_komunitas()
-	{
-		if ($this->session->has_userdata('user')) {
-			$this->load->view('dashboard');
-		}else {
-			redirect('login');
-		}
-	}
 }
